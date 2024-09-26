@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-to-cart_Popup</title>
+    <link rel="stylesheet" href="shii.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body id="btn">
+    
+    <div class="container">
+        <button class="btn" onclick="openPopup()">Add to Cart</button>
+        <div class="popup" id="popup">
+            <i class='bx bxs-cart-add'></i>
+            <h2>Yayyyyy!!!</h2>
+            <p>Added to cart Successfully.</p>
+            <button type="button" class="btn btn-1" onclick="closePopup()">Ok</button>
+        </div>
+    </div>
+
+    <script>
+    let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
